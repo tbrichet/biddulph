@@ -1,0 +1,201 @@
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-image: url("./images/sky2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  li a:hover {
+    color: #f7de04;
+  }
+
+  #home {
+    margin-bottom: 250px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container_image {
+    object-fit: contain;
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+
+  .homeimage {
+    flex-basis: 40%;
+    width: 90%;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 100px;
+    margin-bottom: -10px;
+  }
+
+  .date {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .container_text {
+    color: black;
+  }
+
+  .hometext {
+    font-size: 25px;
+    margin-right: 40px;
+  }
+
+  span {
+    color: darkred;
+  }
+
+  .fill {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+
+  #about {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #accommodations {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  h5 {
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    /* margin-top: 15vh; */
+    margin-bottom: 30px;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    width: 40%;
+    top: 0;
+    left: calc(50% - 330px);
+    opacity: 0;
+    animation: display 25s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 5s;
+  }
+  img:nth-child(3) {
+    animation-delay: 10s;
+  }
+  img:nth-child(4) {
+    animation-delay: 15s;
+  }
+  img:nth-child(5) {
+    animation-delay: 20s;
+  }
+
+  #itinerary {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+  }
