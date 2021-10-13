@@ -29,7 +29,7 @@ ul {
   }
   
   li a:hover {
-    color: #f7de04;
+    color: #ffe54c;
   }
 
   #home {
@@ -109,9 +109,14 @@ ul {
   }
 
   #about {
-    background-color: white;
+    background-image: linear-gradient(white,#ffe54c);
     margin: 30px;
     padding: 20px;
+  }
+
+  .maintext {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   h2 {
@@ -121,7 +126,7 @@ ul {
   }
 
   #accommodations {
-    background-color: white;
+    background-image: linear-gradient(white, #ffe54c);
     margin: 50px 30px 50px 30px;
     padding: 20px;
   }
@@ -195,7 +200,48 @@ ul {
   }
 
   #itinerary {
-    background-color: white;
+    background-image: linear-gradient(white, #ffe54c);
     margin: 50px 30px 50px 30px;
     padding: 20px;
+  }
+
+  .centertext {
+    text-align: center;
+    font-style: italic;
+  }
+
+  .itinerarycard {
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .datetext {
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .locationtext {
+    font-style: italic;
+    color: steelblue;
+    font-weight: 800;
+  }
+
+  #rsvp {
+    background-image: linear-gradient(white, #ffe54c);
+    margin: 50px 30px 50px 30px;
+    padding: 20px;
+  }
+
+  .googleform {
+    text-align: center;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  .footertext {
+    font-style: italic;
   }
